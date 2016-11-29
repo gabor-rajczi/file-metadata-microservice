@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+html
+    head
+        link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" type="text/css")
+    body
+        div(class="content")
+            p Submit a file to view its filesize.
+            form(method='POST', id='file_upload', enctype='multipart/form-data')
+                label(for='uploaded_file') File:
+                input(type='file', name='uploaded_file', id='uploaded_file')
+                input(type='submit', value='Upload')
